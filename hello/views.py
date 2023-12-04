@@ -1,4 +1,4 @@
-from django.shortcuts import HttpResponse
+from django.shortcuts import HttpResponse, render
 
 def hello_views(request): # request z konwencji , funkcaj musi zwraciac http
     return HttpResponse("hello word") # dopiero widok moze byc str
@@ -11,3 +11,11 @@ def hello_adam(request):
 
 def hello_name(request, name):
     return HttpResponse(f"hello {name}")
+
+def hello_template(request):
+    return HttpResponse ("Hello Eva")
+
+def hello_template2(request,name):
+    return render(request,'name_template.html')
+
+
