@@ -20,4 +20,6 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello/', include('hello.urls')), #wchodzi do hello i szuka w urls, include wskazuje ->
+    path('template/', include('template_app.urls'))
 ]
+
