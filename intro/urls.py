@@ -20,6 +20,8 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello/', include('hello.urls')), #wchodzi do hello i szuka w urls, include wskazuje ->
-    path('template/', include('template_app.urls'))
+    path('template/', include('template_app.urls')),
+    path('link/', include('link_app.urls')),
+    path('inheritance/', include('inheritance_app.urls'))
 ]
 
